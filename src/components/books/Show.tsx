@@ -1,8 +1,9 @@
 import { Link, Navigate, useParams } from "react-router-dom";
 
-import { useRetrieve, useDelete } from "../../hooks";
+// import { useRetrieve, useDelete } from "../../hooks";
 import TResource from "./type";
 import { TError } from "../../utils/types";
+import React from "react";
 
 interface ShowProps {
   retrieved: TResource | null;

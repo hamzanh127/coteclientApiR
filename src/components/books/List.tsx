@@ -1,10 +1,11 @@
 import { Link, useParams } from "react-router-dom";
-import Links from "../Links";
-import Pagination from "../Pagination";
-import { useRetrieve } from "../../hooks";
+import Links from "../Links.tsx";
+import Pagination from "../Pagination.tsx";
+// import { useRetrieve } from "../hooks";
 import { PagedCollection } from "../../interfaces/Collection";
 import TResource from "./type";
 import { TError } from "../../utils/types";
+import React from "react";
 
 interface ListProps {
   retrieved: PagedCollection<TResource> | null;
