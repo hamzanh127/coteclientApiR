@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { List } from './components/books';
+// import List from './components/books/List.tsx';
+// import Show from './test2';
+// import { List } from './components/books';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +15,9 @@ root.render(
 <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="book" element={< List/>} />
+      {/* <Show/>  */}
+      {/* <Route path="books" element={< List/>} /> */}
+      <Route render={() => <h1>Not Found</h1>} />
       {/* <Route path="invoices" element={<Invoices />} /> */}
     </Routes>
   </BrowserRouter>
